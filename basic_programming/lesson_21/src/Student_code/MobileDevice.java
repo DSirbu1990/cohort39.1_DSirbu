@@ -2,6 +2,7 @@ package Student_code;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class MobileDevice {
     private List<String> application;
@@ -20,7 +21,11 @@ public class MobileDevice {
         application.remove(app);
         System.out.println("Приложение " + app + " удалена.");
     }
-    public void showBatteryLevel (int batteryLevel){
+    public void showBatteryLevel (){
+
+        Random random = new Random();
+        batteryLevel = random.nextInt(0,101);
+
         if (batteryLevel>0) {
             System.out.println("Батарея заряжена до - " + batteryLevel + "%");
         }else {

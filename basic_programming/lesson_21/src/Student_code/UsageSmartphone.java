@@ -8,8 +8,7 @@ public class UsageSmartphone {
         Prime.showApplication();
         Prime.uninstallApp("Game");
         Prime.showApplication();
-        Prime.showBatteryLevel(0);
-        Prime.showBatteryLevel(50);
+        Prime.showBatteryLevel();
         Prime.updateFirmware("Android 1");
         Smartphone Next = new Smartphone("iPhone","ios");
         Smartphone Dual = new Smartphone("Samsung", "Android");
