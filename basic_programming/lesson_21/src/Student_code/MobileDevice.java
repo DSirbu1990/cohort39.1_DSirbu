@@ -14,14 +14,17 @@ public class MobileDevice {
     }
 
     public void installApp( String app){
+        // Этот метод добавляет приложение в список установленных.
         application.add(app);
         System.out.println("Приложение " + app + " добавлена.");
     }
     public void uninstallApp(String app){
+        // Этот метод удаляет приложение из списка.
         application.remove(app);
         System.out.println("Приложение " + app + " удалена.");
     }
     public void showBatteryLevel (){
+        //Этот метод отображает текущий заряд батареи.
 
         Random random = new Random();
         batteryLevel = random.nextInt(0,101);
