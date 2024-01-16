@@ -2,20 +2,32 @@ package Error_and_exception;
 
 public class CalculateArea {
     public static void main(String[] args)  {
-        double[] circle = {3};
-        double[] rectangle = {1.5,2};
-        double[] triangle = {2,2,2};
+        double[] circle = {-3};
+        double[] rectangle = {1.5,-2};
+        double[] triangle = {2,2,245};
         double[] incorrect = {1.5,2,4,5};
 
 
        try {
            calculateArea(circle);
-           calculateArea(rectangle);
-           calculateArea(triangle);
-           calculateArea(incorrect);
        } catch (IncorrectFigureSizeException e) {
            System.out.println(e.getMessage());
        }
+        try {
+            calculateArea(rectangle);
+        } catch (IncorrectFigureSizeException e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            calculateArea(triangle);
+        } catch (IncorrectFigureSizeException e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            calculateArea(incorrect);
+        } catch (IncorrectFigureSizeException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
 
