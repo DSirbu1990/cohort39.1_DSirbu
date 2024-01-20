@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class CalculateAreaTest {
     @Test
     public void testCircleAreaErrorMessage () {
-
+       //проверяем, сработает ли исключение при неправильном указании радиуса
         double[] circle = {-3};
         String errorMessage = null;
         try {
@@ -19,7 +19,7 @@ public class CalculateAreaTest {
     }
     @Test
     public void testRectangleAreaErrorMessage () {
-
+        //проверяем, сработает ли исключение на неправильное указание сторон прямоугольника
         double[] rectangle = {1.5,-2};
         String errorMessage = null;
         try {
@@ -33,7 +33,7 @@ public class CalculateAreaTest {
 
     @Test
     public void testTriangleAreaErrorMessage () {
-
+        // проверяем, сработает ли исключение на неправильное указание сторон треугольника
         double[] triangle = {4.5,6.4,90.2};
         String errorMessage = null;
         try {
