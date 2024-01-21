@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class FindMaxMinAvg {
+
+    /**Заполните ArrayList случайными числами.
+     * Напишите методы для нахождения максимального, минимального и среднего значения в списке
+     * (сумма всех значений, деленая на количество элементов).
+     */
     public static void main(String[] args) {
         //создаю пустой список
         ArrayList<Integer> integer = new ArrayList<>();

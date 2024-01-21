@@ -1,19 +1,33 @@
 package Generics;
 
+import java.util.Arrays;
+
 public class SwapElements<T> {
+    /**Разработайте статический обобщенный метод swap, который принимает массив любого типа и два индекса,
+     * и обменивает местами элементы по этим индексам.
+     */
+    public static void main(String[] args) {
+        //создаю массив типа Integer
+        Integer [] integerTest = {2,4,5,6,7,8};
+        swap(integerTest,0,3);
+        System.out.println(Arrays.toString(integerTest));
 
-    private T[] array;
+        //создаю массив типа Double
+        Double [] doubleTest = {3.5,6.5,4.2,3.4};
+        swap(doubleTest,0,1);
+        System.out.println(Arrays.toString(doubleTest));
 
-    public SwapElements(T[] array) {
-        this.array = array;
+        //создаю массив типа String
+        String [] stringTest = {"A","C","B"};
+        swap(stringTest,1,2);
+        System.out.println(Arrays.toString(stringTest));
+
     }
 
-    public T[] getArray () {
-
-        return array;
-    }
+    //статический обобщенный метод swap, создаю с помощью дженериков
+    //этот метод принимает массив любого типа и два индекса
     public static <T> T[] swap (T[] array, int index1, int index2) {
-
+      // создаю цикл for с помощью которого метод будет менять значение местами
         for (int i = 0; i < array.length; i++) {
             T temp;
             temp = array[index1];
@@ -22,18 +36,5 @@ public class SwapElements<T> {
         }
         return array;
     }
-
-
-
-    public static void main(String[] args) {
-        int [] integerTest = {2,4,5,6,7,8};
-      //  SwapElements <Integer> integerSwapElements  = new SwapElements<>(integerTest);
-      // swap(integerTest, 0,3);
-      //  System.out.println(Arrays.toString(intgerTest));
-
-
-    }
-
-
 
 }
