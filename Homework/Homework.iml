@@ -8,9 +8,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="TEST" name="junit-jupiter-api-5.8.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="junit-jupiter-api-5.8.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="junit-jupiter-api-5.8.2" level="project" />
+    <orderEntry type="library" exported="" name="junit-jupiter-api-5.8.2" level="project" />
+    <orderEntry type="library" exported="" name="junit-jupiter-api-5.8.2" level="project" />
+    <orderEntry type="library" exported="" name="junit-jupiter-api-5.8.2" level="project" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
