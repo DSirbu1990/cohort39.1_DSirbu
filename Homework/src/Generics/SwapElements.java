@@ -27,13 +27,11 @@ public class SwapElements<T> {
     //статический обобщенный метод swap, создаю с помощью дженериков
     //этот метод принимает массив любого типа и два индекса
     public static <T> T[] swap (T[] array, int index1, int index2) {
-      // создаю цикл for с помощью которого метод будет менять значение местами
-        for (int i = 0; i < array.length; i++) {
             T temp;
             temp = array[index1];
             array[index1] = array[index2];
             array[index2] = temp;
-        }
+
         return array;
     }
 
