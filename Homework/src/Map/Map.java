@@ -1,5 +1,4 @@
-package Map;
-
+import java.util.Collections;
 import java.util.HashMap;
 
 /**
@@ -25,18 +24,35 @@ public class Map {
 
         removeSameValues(map);
 
+
     }
 
-    private static void removeSameValues(java.util.Map<String, String> map) {
-        for (java.util.Map.Entry <String, String> entry : map.entrySet()) {
-            String key = entry.getKey();
-            String value = entry.getValue();
-            if (map.containsValue(value)){
-                map.remove(key);
+    public static void removeSameValues(HashMap<String, String> map) {
+        // создаю копию массива
+        HashMap<String, String> copy = new HashMap<String, String>(map);
+        for (HashMap.Entry<String, String> pair : copy.entrySet()){
+            // применяю метод Collections.frequency, чтобы найти повторения
+            int frequency = Collections.frequency(copy.values(), pair.getValue());
+            // если такие имеются то передаём в метод для удаления.
+            if (frequency > 1){
+                removeItemFromMapByValue(map, pair.getValue());
             }
-            System.out.println(map);
         }
-        
+        System.out.println("Пары с уникальным значением: " + map);
     }
+
+
+    //Создаю метод каторий удалит одинаковые значение
+    public static void removeItemFromMapByValue(HashMap<String, String> map, String value) {
+        HashMap<String, String> copy = new HashMap<String, String>(map);
+        for (HashMap.Entry<String, String> entry: copy.entrySet())
+        {
+            if (entry.getValue().equals(value))
+                map.remove(entry.getKey());
+        }
+    }
+
+
 }
+
 
