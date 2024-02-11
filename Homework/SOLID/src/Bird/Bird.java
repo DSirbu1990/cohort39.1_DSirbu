@@ -1,5 +1,7 @@
 package Bird;
-
+/*
+Создать класс Bird с методом fly()
+ */
 public class Bird {
     public String bird;
 

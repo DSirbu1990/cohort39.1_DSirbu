@@ -1,4 +1,7 @@
 package Bird;
+/*
+реализуйте подкласс Eagle, должeн наследовать Bird
+ */
 
 public class Eagle extends Bird{
 

@@ -1,4 +1,7 @@
 package Bird;
+/*
+реализуйте подкласс Penguin, должeн наследовать Bird
+ */
 
 public class Penguin extends Bird{
     public static void main(String[] args) {
