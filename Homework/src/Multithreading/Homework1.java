@@ -4,6 +4,15 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class Homework1 {
+
+    /**
+     *Задача: Параллельное считывание из двух файлов
+     * Напишите программу, которая параллельно считывает данные из двух файлов и выводит их на экран.
+     * Пример
+     * Входные данные (в файле 1): Hello, World!
+     * Входные данные (в файле 2): How are you?
+     * Выходные данные: Hello, World! How are you?
+     */
     public static void main(String[] args) throws InterruptedException {
         Thread thread1 = new Thread(() -> {
           String file1Path = "/Users/doinasirbu/Documents/java project/cohort39.1_DSirbu/Homework/src/Multithreading/File1";
