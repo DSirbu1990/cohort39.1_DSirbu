@@ -3,7 +3,7 @@ package Multithreading;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class Homework1 {
+public class Join {
 
     /**
      *Задача: Параллельное считывание из двух файлов
